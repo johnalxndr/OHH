@@ -42,5 +42,6 @@ angular.module('ohh')
             })
             .finally(function () {
                 $scope.loading = false;
-            });
+            })
+        $scope.range = new Array(4);
     });

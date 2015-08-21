@@ -48,12 +48,15 @@ $green:#65e892;
         .category {
             border: solid 2px gray;
             border-radius: 10px;
-            padding:1ex;
+            padding: 1ex;
         }
         .status {
             border: solid 2px $green;
             border-radius: 10px;
             padding: 1ex;
+        }
+        span.ion-social-usd {
+            color: $green;
         }
     }
     .sectionright {
