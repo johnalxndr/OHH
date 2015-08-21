@@ -20,7 +20,7 @@
             <h3 class="barname">{{name}}</h3>
             <span class="status" ng-class="status ? 'open' : 'closed'"> {{status? 'open' : 'closed'}}</span>
             <span class="category">{{category}}</span>
-            <span class="ion-social-usd" ng-repeat="i in range.slice(0,priceTier) track by $index" />
+            <span class="dollar ion-social-usd" ng-repeat="i in range.slice(0,priceTier) track by $index" />
         </div>
         <!--nametext-->
 
