@@ -1,0 +1,51 @@
+$dark1:#26282b;
+$dark2:#353941;
+$lightblue:#5f85db; 
+$lighterblue:#90b8f8;
+
+.title{
+  color:$dark1;
+  text-align:center;
+  padding:1em;
+}
+.day{
+  text-align:center;
+  color: $lightblue;
+}
+.bar-item{
+  border:dashed gray;
+}
+i{
+  color:$lighterblue;
+  padding:1em;
+}
+.votenumber{
+  color:$dark2;
+  font-size:2em;
+  padding:1ex;
+  
+}
+.barname{
+  color:$dark1;
+  font-size:2em;
+}
+.closed{
+  color:red;
+}
+.open{
+  color:#65e892;
+}
+.yes{
+  color:green;
+}
+.no{
+  color:red;
+}
+.bar{
+  border:solid 1px white;
+}
+img{
+  float:left;
+  height:200px;
+  width:200px;
+}
