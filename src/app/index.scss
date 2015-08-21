@@ -16,6 +16,10 @@ $green:#65e892;
 
 .bar-item {
     border: dashed gray;
+    &:hover {
+        background: #f7f7fa;
+        cursor: pointer;
+    }
     .votebox {
         padding-top: 3.5ex;
         margin-left: 2ex;

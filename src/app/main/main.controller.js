@@ -11,6 +11,15 @@ angular.module('ohh')
             $scope.vote--;
         };
         $scope.vote = 0;
+        var nightlife = {
+            method: 'Get',
+            url: 'https://api.foursquare.com/v2/venues/search?near=orlando,fl&intent=browse&categoryId=4d4b7105d754a06376d81259&oauth_token=LJX30GV2ZVXLQ2LKUSTHVXRTBLQQKPPRFKSMABJIZMJ0QP0S&v=20150821'
+        };
+        $http(nightlife)
+            .success(function (response) {
+                $scope.response = response;
+                console.log(response)
+            })
         var blu = {
             method: 'Get',
             url: 'https://api.foursquare.com/v2/venues/50f4966fe4b0802973f608f9?oauth_token=LJX30GV2ZVXLQ2LKUSTHVXRTBLQQKPPRFKSMABJIZMJ0QP0S&v=20150805'
