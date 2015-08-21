@@ -1,28 +1,36 @@
-
-  <div class="container-fluid">
+<div class="container-fluid">
     <h1 class="title">Happy Hour Web App</h1>
     <h2 class="day">{{date | date: 'EEEE' }}</h2>
     <div class="bar-item col-sm-12">
-      
-      <div class="col-sm-2 col-md-1 upvote">
-          <i ng-click="upVote()" class="fa fa-angle-up fa-2x" ng-class="{true:'up', false:''}[vote=='up']"></i>
-            <span class="votenumber">{{vote}}</span>
-          <i ng-click="downVote()" class="fa fa-angle-down fa-2x" ng-class="{true:'down', false:''}[vote=='down']"></i>
-      </div><!--upvote-->
-      
-      <div class="photowrapper">
-        <img id="bestphoto" ng-src="{{bestPhoto}}"/>
-      </div><!--photowrapper-->
-      
-      <!--<img id="mySpinner" class="col-md-2" src="http://i.giphy.com/g6aW5wIUofNlu.gif" ng-show="loading" />-->
-      <div class="namewrapper">
-        <h3 class="barname col-sm-5">{{name}}</h3>
-        <span id="status" ng-class="status ? 'open' : 'closed'"> {{status? 'open' : 'closed'}}</span>
-      </div><!--nameWrapper-->
-      <div class="sectionright">
-        <div class="rating">{{rating}}</div>
-        <div class="hour">{{hour}}</div>
-        <div class="visits">{{visits}}</div>
-      </div><!--sectionRight-->
-    </div><!--bar-item-->
-  </div><!--container-->
+
+        <div class="col-sm-2 col-md-1 votebox">
+            <i ng-click="upVote()" class="ion-chevron-up" ng-class="{true:'up', false:''}[vote=='up']"></i>
+            <div class="votes">{{vote}}</div>
+            <i ng-click="downVote()" class="ion-chevron-down" ng-class="{true:'down', false:''}[vote=='down']"></i>
+        </div>
+        <!--upvote-->
+
+        <div class="photowrapper">
+            <img id="bestphoto" ng-src="{{bestPhoto}}" />
+        </div>
+        <!--photowrapper-->
+
+
+        <div class="nametext">
+            <h3 class="barname">{{name}}</h3>
+            <span class="status" ng-class="status ? 'open' : 'closed'"> {{status? 'open' : 'closed'}}</span>
+            <span class="category">{{category}}</span>
+            <i class="ion-social-usd">{{priceTier}}</i>
+        </div>
+        <!--nametext-->
+
+        <div class="sectionright col-md-3">
+            <div class="rating">{{rating}}</div>
+            <div class="hour">{{hour}}</div>
+            <div class="visits">{{visits}}</div>
+        </div>
+        <!--sectionRight-->
+    </div>
+    <!--bar-item-->
+</div>
+<!--container-->

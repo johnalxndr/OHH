@@ -1,52 +1,70 @@
-
 $dark1:#26282b;
 $dark2:#353941;
-$lightblue:#5f85db; 
+$lightblue:#5f85db;
 $lighterblue:#90b8f8;
+$green:#65e892;
+.title {
+    color: $dark1;
+    text-align: center;
+    padding: 1em;
+}
 
-.title{
-  color:$dark1;
-  text-align:center;
-  padding:1em;
+.day {
+    text-align: center;
+    color: $lightblue;
 }
-.day{
-  text-align:center;
-  color: $lightblue;
+
+.bar-item {
+    border: dashed gray;
+    .votebox {
+        padding-top: 3.5ex;
+        margin-left: 2ex;
+        margin-right: 2ex;
+        i {
+            color: $lighterblue;
+            font-size: 1.7em;
+            cursor: pointer;
+        }
+        .votes {
+            color: $dark2;
+            font-size: 1.6em;
+            padding-right: 1.5ex;
+        }
+    }
+    .photowrapper {
+        #bestphoto {
+            float: left;
+            height: 150px;
+            width: 150px;
+            border-radius: 25px;
+        }
+    }
+    .nametext {
+        padding-right: 2em;
+        .barname {
+            color: $dark1;
+            font-size: 2em;
+        }
+        .category {
+            border: solid 2px gray;
+            border-radius: 10px;
+            padding:1ex;
+        }
+        .status {
+            border: solid 2px $green;
+            border-radius: 10px;
+            padding: 1ex;
+        }
+    }
+    .sectionright {
+        float: right;
+    }
 }
-.bar-item{
-  border:dashed gray;
+
+.closed {
+    color: red;
 }
-i{
-  color:$lighterblue;
-  padding:1em;
-}
-.votenumber{
-  color:$dark2;
-  font-size:2em;
-  padding:1ex;
-  
-}
-.barname{
-  color:$dark1;
-  font-size:2em;
-}
-.closed{
-  color:red;
-}
-.open{
-  color:#65e892;
-}
-.yes{
-  color:green;
-}
-.no{
-  color:red;
-}
-.bar{
-  border:solid 1px white;
-}
-img{
-  float:left;
-  height:200px;
-  width:200px;
+
+.open {
+    color: #65e892;
 }
