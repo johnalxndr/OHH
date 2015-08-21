@@ -6,15 +6,15 @@ angular.module('ohh')
     $scope.date = new Date();
     $scope.upVote = function() {
       $scope.vote++;
-    }
+    };
     $scope.downVote = function() {
       $scope.vote--;
-    }
+    };
     $scope.vote = 0;
     var blu = {
       method: 'Get',
-      url: "https://api.foursquare.com/v2/venues/50f4966fe4b0802973f608f9?oauth_token=LJX30GV2ZVXLQ2LKUSTHVXRTBLQQKPPRFKSMABJIZMJ0QP0S&v=20150805"
-    }
+      url: 'https://api.foursquare.com/v2/venues/50f4966fe4b0802973f608f9?oauth_token=LJX30GV2ZVXLQ2LKUSTHVXRTBLQQKPPRFKSMABJIZMJ0QP0S&v=20150805'
+    };
     $http(blu)
       .success(function(response) {
         $scope.name = response.response.venue.name;
@@ -40,5 +40,5 @@ angular.module('ohh')
       })
       .finally(function() {
         $scope.loading = false;
-      })
+      });
   });
